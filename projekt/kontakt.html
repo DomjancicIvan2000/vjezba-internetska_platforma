@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>Projektni zadatak</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            width: 100%;
+        }
+    
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+    
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+    
+        nav a:hover {
+            background-color: orange;
+        }
+    
+        nav a:not(:last-child) {
+            margin-right: 20px;
+        }
+    
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+    
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+    
+        .map-container {
+            flex: 1;
+            max-width: 50%;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .map-container iframe {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 1;
+            border: 0;
+        }
+    
+        .form-container {
+            flex: 1;
+            max-width: 50%;
+            min-width: 300px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        form label {
+            font-weight: bold;
+        }
+    
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+    
+        form input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    
+        form input[type="submit"]:hover {
+            background-color: #e69500;
+        }
+    
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: auto;
+        }
+    
+        footer img {
+            height: 20px;
+            width: 20px;
+            vertical-align: middle;
+        }
+    
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0;
+            }
+    
+            nav a {
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+    
+            .content-container {
+                flex-direction: column;
+            }
+    
+            .map-container iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.9504184324724!2d152.91937339999998!3d-31.443031899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9dff3326b8fe79%3A0x610f59938f01ffb0!2sKoala%20Conservation%20Hospital%20Port%20Macquarie!5e0!3m2!1shr!2shr!4v1737963490499!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="form">
+            <form action="post">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="lastname">Prezime:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <select name="country" id="country">
+                    <option value="hr">Hrvatska</option>
+                    <option value="us">Sjedinjene Američke Države</option>
+                    <option value="de">Njemačka</option>
+                    <option value="fr">Francuska</option>
+                    <option value="it">Italija</option>
+                    <option value="as">Australija</option>
+                </select>
+                <label for="description">Opis:</label>
+                <textarea id="description" name="description" required></textarea>
+                <br>
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>

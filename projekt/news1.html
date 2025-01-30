@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>News</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        figure {
+            height: 200px;
+            width: fit-content;
+            margin: 30px;
+            padding-bottom: 30px;
+            border: solid 1px black;
+            float: left;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 20px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Koale nisu slatke već su zapravo bića iz pakla. Točka!</h1>
+        <div class="picture">
+            <figure>
+                <img src="/media/koala2.jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+            </figure>
+        </div>
+        <h2>Među njima vlada vrlo zarazan soj klamidije</h2>
+        <div>
+            <p>Bolest je veoma bolna za koale jer uzrokuje sljepoću, neplodnost i infekciju poznatu kao “prljavi rep”. Prljavi rep eufemizam je za inflamaciju urinarnog trakta koja je toliko bolna da može završiti fatalno.</p>
+            <p>Njihov hipersenzitivni crijevni mikrobiom ne može podnijeti lijekove namijenjene ni životinjama, ni ljudima, tako da trenutno ne postoji način na koji bi ih se moglo izliječiti.</p>
+            <p>Ali postoje i dobre vijesti - u Australiji se trenutno razvija cjepivo namijenjeno posebno koalama, a Russell Crowe dio je novca sa svoje razvodne aukcije (dok jednom ne smrkne…) donirao upravo klinici za koale, na čemu mu je zahvalila obitelj Stevea Irwina.</p>
+            <p>I tu nije kraj - koale mogu klamidiju prenijeti ljudima koji dođu u kontakt s njihovim urinom. Pritom bi trebalo naglasiti da se ovi anđelčići koji nalikuju bijesnim djedovima bez beda znaju popišati na ljude, a jedne od njihovih žrtava bili su i dečki iz One Directiona.</p>
+            <p>Naime, četvero ljudi navodno je planiralo ukrasti koalu i zamijeniti je za drogu, ali izabrali su krivu neman. Koala ih je toliko izgrebala da su odustali od prvotnog plana te umjesto nje odlučili ukrasti krokodila.</p>
+            <p class="date">9. ožu 2022.</p>
+        </div>
+
+        <a href="news.html">Natrag</a>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>

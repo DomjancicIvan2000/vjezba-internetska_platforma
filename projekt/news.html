@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>News</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main div{
+            display: flex;
+            gap: 20px;
+            border: solid 1px black;
+        }
+
+        main div .text{
+            flex-direction: column;
+            border: none;
+        }
+
+        main h1{
+            font-size: 20px;
+            margin: 0;
+        }
+
+        main p{
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        main figure{
+            margin: 0;
+        }
+
+        main img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column; 
+                padding: 20px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+
+            main div {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            main img {
+                height: auto;
+                width: 90%;
+                object-fit: cover;
+            }
+
+            main .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            main h1 {
+                font-size: 18px;
+            }
+
+            main p {
+                font-size: 14px;
+            }
+
+            footer {
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            footer img {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Novosti</h1>
+        <div>
+            <figure>
+                <img src="/media/koala2.jpg" alt="Koala">
+            </figure>
+            <div class="text">
+                <h1><a href="news1.html">Koale nisu slatke već su zapravo bića iz pakla. Točka!</a></h1>
+                <p>Ne dajte da vas ovaj dobroćudni izraz njuške zavara.
+                    Onima koji su se ili susreli s tim krznatim gremlinima 
+                    u pravom životu, ili nenadano informirali o njima - jasno je o čemu se radi.
+                </p>
+                <p class="date">9. ožu 2022.</p>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="/media/koala3.jpg" alt="Koala">
+            </figure>
+            <div class="text">
+                <h1><a href="news2.html">Ove ljupke krznate životinjice od sada se nalaze na popisu ugroženih vrsta</a></h1>
+                <p>Nažalost, zbog sve većeg broja turista koji dolaze u Australiju, 
+                    koale su sve više ugrožene. 
+                    Naime, turisti ih često hrane i diraju, što može dovesti do ozbiljnih posljedica.
+                </p>
+                <p class="date">15. velj 2022.</p>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="/media/koala4.jpg" alt="Koala">
+            </figure>
+            <div class="text">
+                <h1><a href="news3.html">Australske koale pate od epidemije klamidije, ali napredak je na pomolu</a></h1>
+                <p>Australski borci za zaštitu prirode počeli su cijepiti
+                    divlje koale protiv vrlo zarazne i smrtonosne vrste klamidije.
+                </p>
+                <p class="date">20. svi 2023.</p>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="/media/koala5.jpg" alt="Koala">
+            </figure>
+            <div class="text">
+                <h1><a href="news4.html">Koalama prijeti izumiranje</a></h1>
+                <p>
+                    Nove brojke otkrivaju da se populacija koali smanjila za 30 posto u posljednje tri godine
+                </p>
+                <p class="date">20. ruj 2021.</p>
+            </div>
+        </div>
+        <div>
+            <figure>
+                <img src="/media/koala6.webp" alt="Koala">
+            </figure>
+            <div class="text">
+                <h1><a href="news5.html">Slatke, ali i tupaste: Zaslužuju li koale titulu najneinteligentnijih životinja?</a></h1>
+                <p>
+                    Koale su nevjerojatne životinje koje su postale simbol Australije. 
+                    Njihov lagani i opušteni način života, uz slatki izgled i iznimno mekanu dlaku, privlače pažnju ljudi diljem svijeta. Međutim, često ih opisuju kao glupaste životinje.
+                </p>
+                <p class="date">14. srp 2023.</p>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>O nama - Projektni zadatak</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p {
+            text-align: justify;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img {
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+        <nav>
+            <a href="projekt.html">Početna stranica</a>
+            <a href="news.html">Novosti</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="oNama.html">O nama</a>
+            <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>O nama</h1>
+        <p>Naša stranica posvećena je ljubavi prema koalama. Smatramo da su ove nevjerojatne životinje pravi simbol nježnosti i ljepote prirode. Iako su koale često suočene s izazovima, poput gubitka staništa i prirodnih prijetnji, naša misija je podizanje svijesti o njihovoj važnosti i očuvanju.</p>
+        <p>Ovu stranicu su stvorili istinski ljubitelji koala koji žele podijeliti informacije, vijesti i inspiraciju o ovim divnim stvorenjima. Ponosni smo na našu strast i trud koji smo uložili u stvaranje mjesta gdje se svi zaljubljenici u koale mogu osjećati kao kod kuće.</p>
+        <figure>
+            <video controls>
+                <source src="/media/video.mp4" type="video/mp4">
+            </video>
+        </figure>
+    </main>
+
+    <footer>
+        Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma">
+            <img src="/media/git.jpg" alt="GitHUB">
+        </a>
+    </footer>
+</body>
+</html>

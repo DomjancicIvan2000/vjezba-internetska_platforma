@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>News</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        figure {
+            height: 200px;
+            width: fit-content;
+            margin: 30px;
+            padding-bottom: 30px;
+            border: solid 1px black;
+            float: left;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 20px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Australske koale pate od epidemije klamidije, ali napredak je na pomolu</h1>
+        <div class="picture">
+            <figure>
+                <img src="/media/koala4.jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+            </figure>
+        </div>
+        
+        <div>
+            <p>Australski borci za zaštitu prirode počeli su cijepiti divlje koale protiv vrlo zarazne i smrtonosne vrste klamidije. Tijekom posljednjih par desetljeća ove tobolčare pogodio je razorni soj klamidije, koji je blisko povezan sa spolno prenosivom bolešću koja se javlja kod ljudi.</p>
+            <p>Kod koala klamidija uzrokuje gastrointestinalne probleme, infekcije mokraćnog sustava i konjunktivitis koji na kraju dovodi do sljepoće. Slijepe i bolesne koale ne mogu se penjati po drveću kako bi jele ili pobjegle od predatora, zbog čega umiru.</p>
+            <p>Bolest može uzrokovati i neplodnost kod ženki zbog velikih cista koje rastu na njihovim jajnicima, što je drastično smanjilo stopu rodnosti kod koala. Mathew Crowther, biolog sa Sveučilišta u Sydneyju koji prati populaciju koala, rekao je da se bebe viđaju jako rijetko, piše Live Science.</p>
+            <h2>Postupak cijepljenja</h2>
+            <p>Istraživači su 2020. godine razvili cjepivo protiv bolesti, koje su uspješno dali koalama u zatočeništvu. Ali njegova učinkovitost u sprječavanju širenja klamidije u divljini nije testirana do sada. Koale se trenutno cijepe na području Novog Južnog Walesa, gdje su zbog klamidije svrstane u kategoriju ugroženih životinja.</p>
+            <p>Da bi cijepili koale, biolozi ih prvo moraju uhvatiti, što je prilično jednostavan, ali vremenski zahtjevan zadatak.Kako bi ih uhvatili, grade kružne ograde oko baza eukaliptusovih stabala na kojima su koale viđene. Kada koale konačno siđu, prisiljene su proći kroz ogradu i ući u kavez. No mogu proći sati, pa čak i dani dok se ovi tobolčari ne spuste na tlo.
+                Nakon što uhvate životinje, veterinari im prvo daju anesteziju, a zatim cjepivo. Koale se potom drže pod nadzorom 24 sata nakon buđenja kako bi se potvrdilo da nema nuspojava.</p>
+            <p class="date">20. svi 2023.</p>
+        </div>
+
+        <a href="news.html">Natrag</a>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>

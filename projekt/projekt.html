@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>Projektni zadatak</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        figure {
+            height: 200px;
+            width: fit-content;
+            margin: 30px;
+            padding-bottom: 30px;
+            border: solid 1px black;
+            float: left;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 20px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Koale</h1>
+        <p>Koala (lat. Phascolarctos cinereus) ili crnonosi medvjedak je sisavac tobolčar 
+            koji živi u Australiji visoko u krošnjama eukaliptusovog drveća. Iako koala 
+            izgleda kao maleni plišani medvjed te se ponekad naziva i koala medvjedić, 
+            on u stvari nije nikakav medvjed, već sisavac tobolčar. Unatoč zakonskoj zaštiti, 
+            ipak je vrlo ugrožena vrsta jer neprestano gubi životni prostor zbog čestih 
+            požara kao i zbog širenja ljudskih naselja i gradnje prometnica unutar područja 
+            koja nastanjuje koala. Koala znači "bez vode" na jeziku naroda Dharuk.
+
+            <figure>
+                <img src="/media/koala.jpg" alt="Slika koale">
+                <figcaption>Koala</figcaption>
+            </figure>
+        </p>
+        <p>Koala je životinjica sivog krzna, ponekad s malo bijelog. Ima veliki crni gumasti nos 
+            i velike dlakave uši. Koala ima dugačke ruke i kratke noge s vrlo dugim i oštrim kandžama 
+            za lako penjanje i držanje na drveću. Gotovo nema repa.
+        </p>
+        <h2>Stanište</h2>
+        <p>Koala živi gotovo isključivo u gornjim dijelovima krošanja posebnih vrsta eukaliptusovog drveća, 
+            čije je lišće njegova gotovo jedina hrana. Svojim snažnim nogama čvrsto obuhvaća drvo, pri čemu 
+            će se oštre pandže zariti u koru. Koala je životinja koja je aktivna noću, pa dane provodi 
+            spavajući na granama. Noću se penje na više grane, gdje pažljivo bira lišće koje jede. 
+            Silazi s drveta vrlo rijetko, najčešće samo da promijeni stablo jer je na dotadašnjem pojeo 
+            lišće kojim se hrani.
+        </p>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>

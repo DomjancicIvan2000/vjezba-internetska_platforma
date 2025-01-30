@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>News</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        figure {
+            height: 200px;
+            width: fit-content;
+            margin: 30px;
+            padding-bottom: 30px;
+            border: solid 1px black;
+            float: left;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 20px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ove ljupke krznate životinjice od sada se nalaze na popisu ugroženih vrsta</h1>
+        <div class="picture">
+            <figure>
+                <img src="/media/koala3.jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+            </figure>
+        </div>
+        <h2>Krčenje zemlje, šumski požari, suša, bolesti i druge prijetnje uzrokovale su alarmantan pad njihovog broja</h2>
+        <div>
+            <p>Nakon dramatičnog pada broja na istočnoj obali Australije, koala je uvrštena na popis ugroženih vrsta. Krčenje zemlje, šumski požari, suša, bolesti i druge prijetnje uzrokovale su alarmantan pad broja koala, piše Green.hr.</p>
+            <p>Koale su uvrštene na popis ranjivih vrsta 2012. godine, a unatoč naporima da ih zaštiti, vlada je polučila neuspjeh.</p>
+            <p>“Stavljanje koala na popis ugroženih vrsta dodaje prioritet kada je u pitanju očuvanje vrste”, rekla je ministrica okoliša Sussan Ley. Dodala je i to da dužnosnici rade na izradi plana oporavka i procjene utjecaja na ovu vrstu.</p>
+            <p>Prošle godine, istraživanje Novog Južnog Walesa pokazalo je da će, ako se ovi trendovi nastave, koale izumrijeti do 2050. godine. Stoga je potrebno poduzeti hitne akcije kako bi se spriječilo izumiranje još jedne vrste. Procjenjuje se da su šumski požari koji su zahvatili Australiju tijekom ljeta 2019. i 2020. prouzročili smrt 5.000 koala i zahvatili 24 posto njihovog staništa samo u Novom Južnom Walesu.</p>
+            <p>Najveća australska skupina za očuvanje koala, The Australian Koala Foundation, kaže da bi sada na teritoriju Australije moglo biti samo 50.000 koala koje žive u divljini.</p>
+            <p class="date">15. velj 2022.</p>
+        </div>
+
+        <a href="news.html">Natrag</a>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>

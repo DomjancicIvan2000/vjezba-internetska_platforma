@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Domjančić">
+    <meta name="description" content="Projekt iz kolegija Internetska platforma">
+    <meta name="keywords" content="projekt, zadatak, www, web, design, webdesign">
+    <title>News</title>
+    <style>
+        .banner {
+            background-image: url(/media/suma.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner p {
+            padding-top: 80px;
+            font-size: 30px;
+            font-weight: bold;
+            color: orange;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: orange;
+        }
+
+        nav a:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        figure {
+            height: 200px;
+            width: fit-content;
+            margin: 30px;
+            padding-bottom: 30px;
+            border: solid 1px black;
+            float: left;
+        }
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 20px;
+        }
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            margin: 20px;
+            height: fit-content;
+        }
+
+        main p{
+            text-align: justify;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        footer img{
+            height: 20px;
+            width: 20px;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+            display: flex;
+            flex-direction: column; 
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            }
+
+            nav a {
+                padding: 10px 0;
+                text-align: center;
+                width: 100%;
+                border-bottom: 1px solid #444;
+            }
+
+            nav a:hover {
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Dobrodošli na stranicu!</p>
+        </div>
+
+        <nav>
+        <a href="projekt.html">Početna stranica</a>
+        <a href="news.html">Novosti</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="oNama.html">O nama</a>
+        <a href="galerija.html">Galerija</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Koalama prijeti izumiranje</h1>
+        <div class="picture">
+            <figure>
+                <img src="/media/koala4.jpg" alt="Koala">
+                <figcaption>Koala</figcaption>
+            </figure>
+        </div>
+        <h2>Nove brojke otkrivaju da se populacija koali smanjila za 30 posto u posljednje tri godine</h2>
+        <div>
+            <p>Znanstvenici su izdali dramatično upozorenje da bi australske koale mogle izumrijeti te da ih je preostalo tek oko 30.000 u divljini.</p>
+            <p>Nove brojke Fondacije australskih koala, koja već cijelo jedno desetljeće prati brojnost koala, otkrivaju da se populacija smanjila za 30 posto u samo tri godine.</p>
+            <p>Najnovija procjena je da u zemlji živi između 32.000 i 58.000 koala, u odnosu na 2018. godinu kada ih je bilo između 46.000 i 82.000 jedinki.To je vrlo mali broj u usporedbi s tim da ih je prije europskog naseljavanja bilo osam milijuna, piše Daily Mail.</p>
+            <p>Broj ovih preslatkih tobolčara najviše je pao u Queenslandu, gdje bi u cijeloj državi moglo ostati samo 6.500 koala.</p>
+            <p>Danas ih možemo pronaći u jugoistočnom dijelu Australije, od Qeenslanda, preko New South Walesa i Victorije do Južne Australije."Raspravlja se o tome KADA će izumrijeti, ali, nažalost, više nema rasprave o tome HOĆE LI izumrijeti", upozorio je profesor ekologije Corey Bradshaw.</p>
+            <p class="date">20. ruj 2021.</p>
+        </div>
+
+        <a href="news.html">Natrag</a>
+    </main>
+
+    <footer>Copyright &copy; Ivan Domjančić
+        <a href="https://github.com/DomjancicIvan2000/vjezba-internetska_platforma"><img src="/media/git.jpg" alt="GitHUB"></a>
+    </footer>
+</body>
+</html>
