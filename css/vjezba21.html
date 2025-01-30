@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            background-image: url(/css/media/first_image.webp);
+            height: 400px;
+            width: 100%;
+            background-size: contain;	
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header p {
+            font-size: 20px;
+            padding: 30px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            padding-top: 250px;
+            word-spacing: 150px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: lightblue;
+        }
+
+        h1 {
+            text-align: left;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            width: 100%;
+        }
+
+        div {
+            width: 30%;
+            height: auto;
+            text-align: center;
+            padding: 10px;
+            background-size: contain;	
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        figure {
+            position: center;
+            display: block;
+        }
+
+        img {
+            position: center;
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        div p {
+            padding: 10px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: 300px;
+                background-size: cover;
+            }
+
+            nav {
+                padding-top: 160px;
+                word-spacing: 20px;
+            }
+
+            div {
+                width: 90%;
+                margin: 20px auto;
+                display: block;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>MARQ &reg;TOOL WATCH COLLECTION</p>
+
+        <nav><a href="#"> Homepage</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact</a></nav>
+    </header>
+
+    <h1>LUXURY SMARTWATCHES</h1>
+    <div>
+        <figure>
+            <img src="/css/media/sat1.webp" alt="slika1">
+        </figure>  
+        <h1>MARQ® Adventurer (Gen 2) - Steel Edition</h1>
+        <p>Cijena vrijedi samo za internet prodaju na www.garmin.com, 
+            PDV je obračunat po stopi od 25%. Prodaju i isporuku 
+            obavlja tvrtka Garmin Europe Ltd.</p>
+    </div>
+
+    <div>
+        <figure>
+            <img src="/css/media/sat2.webp" alt="slika2">
+        </figure>
+        <h1>MARQ® Athlete (Gen 2) - Carbon Edition</h1>
+        <p>Cijena vrijedi samo za internet prodaju na www.garmin.com, 
+            PDV je obračunat po stopi od 25%. Prodaju i isporuku 
+            obavlja tvrtka Garmin Europe Ltd.</p>
+    </div>
+
+    <div>
+        <figure>
+            <img src="/css/media/sat3.webp" alt="slika3">
+        </figure>
+        <h1>MARQ® Aviator (Gen 2)</h1>
+        <p>Cijena vrijedi samo za internet prodaju na www.garmin.com, 
+            PDV je obračunat po stopi od 25%. Prodaju i isporuku 
+            obavlja tvrtka Garmin Europe Ltd.</p>
+    </div>
+
+    <footer>Copyright &copy; Ivan Domjančić</footer>
+</body>
+</html>

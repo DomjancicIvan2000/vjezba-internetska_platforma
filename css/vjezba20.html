@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        h1:hover {
+            text-shadow: black 1px 1px;
+        }
+
+        p {
+            text-indent: 50px;
+        }
+
+        p:hover {
+            background-color: yellow;
+            transform: scale(1.1);
+        }
+
+        p:nth-of-type(1){
+            letter-spacing: 2px;
+            word-spacing: 7px;
+            text-transform: capitalize;
+        }
+
+        p:nth-of-type(2){
+            line-height: 20px;
+            text-transform: lowercase;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        figure {
+            width: 250px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Neki naslov</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Duis ultrices porta ipsum, ac interdum leo. Vestibulum in velit urna. 
+        Sed tempus ornare tellus, ut aliquam elit maximus sit amet. 
+        Nullam lobortis ut sem et maximus. Mauris eget mollis leo. 
+        Nullam pulvinar mi et mauris mollis, ullamcorper aliquam odio imperdiet. 
+        Pellentesque augue est, sollicitudin a diam in, auctor condimentum ipsum. 
+        Quisque in posuere dolor. Aliquam at aliquet leo.</p>
+
+    <p>
+        Pellentesque pellentesque sed nibh quis mollis. 
+        Sed ut diam dolor. Morbi in vehicula leo. 
+        Duis ac imperdiet arcu. Vestibulum turpis velit, 
+        fermentum quis viverra quis, iaculis vel mauris. 
+        Integer non semper neque. Maecenas diam nulla, 
+        gravida at consectetur eu, egestas nec neque. 
+        Duis et lacinia sapien. Mauris eget consectetur turpis, quis egestas justo. 
+        Phasellus iaculis suscipit dolor ac lacinia.
+    </p>
+
+    <div class="card">
+        <h1>Naslov kartice</h1>
+        <figure>
+            <img src="/css/media/image.jpg" alt="Slika">
+        </figure>
+        <p>Maecenas diam nulla, 
+        gravida at consectetur eu, egestas nec neque. 
+        Duis et lacinia sapien. Mauris eget consectetur turpis, quis egestas justo. 
+        Phasellus iaculis suscipit dolor ac lacinia.
+        </p>
+    </div>
+</body>
+</html>
